@@ -14,5 +14,7 @@ try:
         location_state = location['region_name']
         location_country = location['country_name']
         location_zip = location['zipcode']
+        url2= 'api.openweathermap.org/data/2.5/weather?lat=%&lon=%&APPID=c3dae359f90443db69dd233e25b9875d' %(location['lat'], location['lon'])
+        print(url2)
 except:
     print("Location could not be determined automatically")
