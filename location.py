@@ -4,7 +4,8 @@ from contextlib import closing
 import json
 
 # Automatically geolocate the connecting IP
-url = 'http://freegeoip.net/json/'
+#url = 'http://freegeoip.net/json/'
+url= 'http://ip-api.com/json'
 try:
     with closing(urlopen(url)) as response:
         location = json.loads(response.read())
